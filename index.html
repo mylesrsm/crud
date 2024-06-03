@@ -15,7 +15,13 @@
       <div class="form">
         RollNo: <input type="text" name="RollNo" id="roll" /> <br /><br />
         Name:&nbsp; <input type="text" name="name" id="name" /> <br /><br />
-        Gender: <input type="text" name="Gender" id="gender" /> <br /><br />
+        Gender: <select name="gender" id="gender" required>
+                  <option value="default" disabled selected hidden>Please select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="nonbinary">Nonbinary</option>
+                  <option value="na">Prefer Not to Say</option>
+                </select>
         Address: <input type="text" name="Address" id="address" /> <br /><br />
         Email Address: <input type="text" name="Email" id="email" /> <br /><br />
       </div>
